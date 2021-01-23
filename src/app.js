@@ -1,18 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import { Data_Model } from './data-model';
 import './app.scss';
 
 function App() {
+  let [meetings, setMeetings] = useState([
+    new Data_Model(
+      'Example',
+      '00:00pm - 00:00pm',
+      'https://link.com',
+      null,
+      null
+    ),
+  ]);
   return (
-    <>
-      <h1>This is the initial setup!</h1>
-      <p>There is a list of things good to do next: </p>
-      <ul>
-        <li>Check the GitHub repository for new updates.</li>
-        <li>Work on a Planner task.</li>
-        <li>Go out for a coffee break with some bread.</li>
-      </ul>
-    </>
+    <div class="principal-grid">
+      <div class="principal-grid-header">
+        <div class="principal-grid-title">
+          <h1>Feria Virtual de Clubes</h1>
+          <p>por el Innovation Club - Desarrollado por André L & Roy V</p>
+        </div>
+      </div>
+      <div class="principal-grid-list">
+        <div class="blank">Example button</div>
+      </div>
+    </div>
   );
 }
 
