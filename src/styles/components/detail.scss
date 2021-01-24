@@ -1,0 +1,97 @@
+%button-style {
+  width: 100%;
+  height: 80px;
+  display: grid;
+  align-content: center;
+  color: white;
+  font-family: 'Carme';
+  font-size: 26px;
+  cursor: pointer;
+  text-decoration: none !important;
+  i {
+    margin-left: 8px;
+    font-size: 30px;
+    text-align: left;
+  }
+  span {
+    text-align: right;
+  }
+}
+.detail-container-button1 {
+  grid-template-columns: 2.25fr 0.75fr;
+}
+.detail-container-button2 {
+  grid-template-columns: 1.85fr 1.15fr;
+}
+.detail-container-button3 {
+  grid-template-columns: 2.13fr 0.87fr;
+}
+.detail-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+}
+.detail-container-card {
+  margin-top: 12vh;
+  justify-self: center;
+  width: 335px;
+  text-align: center;
+}
+.detail-container-image-container {
+  width: 290px;
+  height: 250px;
+  display: grid;
+  border-radius: 2px;
+  background-color: white;
+  margin: 0 auto;
+  -webkit-box-shadow: 12px 12px 0px 0px $light-blue;
+  box-shadow: 12px 12px 0px 0px $light-blue;
+}
+.detail-container-image {
+  width: 83%;
+  align-self: center;
+  justify-self: center;
+}
+.detail-container-title {
+  margin: 35px 0;
+  font-family: 'Carme';
+  font-size: 34px;
+  color: white;
+}
+.detail-container-principal-btn {
+  @extend %button-style;
+  background-color: $light-blue;
+}
+.detail-container-secondary-btn {
+  @extend %button-style;
+  border: 1px solid white;
+  transition: 0.3s ease-in-out;
+}
+.detail-container-secondary-btn:hover {
+  background-color: white;
+  color: $light-blue;
+}
+a {
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 350px) {
+  .detail-container-card {
+    width: 280px;
+  }
+  .detail-container-image-container {
+    width: 240px;
+    height: 200px;
+  }
+  .detail-container-button1 {
+    grid-template-columns: 2.35fr 0.65fr;
+  }
+  .detail-container-button3 {
+    grid-template-columns: 2.23fr 0.77fr;
+  }
+}
+@media screen and (max-height: 750px) {
+  .detail-container-card {
+    margin-top: 5vh;
+  }
+}

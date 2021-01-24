@@ -11,34 +11,39 @@
   -webkit-box-shadow: 12px 12px 0px 0px #ffffff;
   box-shadow: 12px 12px 0px 0px #ffffff;
   width: fit-content;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: $light-blue;
   padding: 15px;
   h1 {
     margin: 0 auto;
     font-family: 'Contrail One';
     color: white;
-    font-size: 64px;
+    font-size: 54px;
     margin-bottom: 5px;
   }
   p {
     margin: 0 auto;
     font-family: 'Contrail One';
-    font-size: 24px;
+    font-size: 16px;
     color: white;
   }
 }
 .principal-grid-list {
-  margin-top: 80px;
+  margin-top: 14px;
   display: grid;
   grid-gap: 75px;
-  grid-template-columns: auto auto auto;
-}
-.blank {
-  height: 110px;
-  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
+.principal-grid-logo {
+  float: right;
+}
+.principal-grid-date {
+  margin-top: 55px;
+  color: white;
+  font-family: 'Contrail One';
+  font-size: 30px;
+}
 @media screen and (max-width: 1250px) {
   .principal-grid-list {
     grid-gap: 35px;
@@ -52,5 +57,19 @@
 @media screen and (max-width: 650px) {
   .principal-grid-list {
     grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .principal-grid-logo {
+    display: none;
+  }
+  .principal-grid-header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .principal-grid-title {
+    justify-self: center;
+    text-align: center;
   }
 }

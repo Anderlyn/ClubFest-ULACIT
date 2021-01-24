@@ -1,0 +1,27 @@
+.button-container {
+  height: 110px;
+  border: 1px solid white;
+  border-radius: 2px;
+  text-align: center;
+  display: grid;
+  color: white;
+  padding: 5px;
+  h2 {
+    margin: 0;
+    align-self: flex-end;
+    font-family: 'Carme';
+    font-size: 30px;
+  }
+  p {
+    margin: 0;
+    font-family: 'Contrail One';
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.button-container:hover {
+  background-color: white;
+  color: $light-blue;
+}
