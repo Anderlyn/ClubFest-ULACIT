@@ -126,14 +126,6 @@ function App() {
       'jueves'
     ),
     new Data_Model(
-      'Book Club',
-      '2:00pm – 3:00pm',
-      'https://ulacit.zoom.us/j/95264263399',
-      null,
-      'leadership',
-      'jueves'
-    ),
-    new Data_Model(
       'Falcon Fury Marching Band',
       '3:00pm – 4:00pm',
       'https://ulacit.zoom.us/j/97919978529',
